@@ -15,17 +15,18 @@ public class Users implements Serializable{
     private String email;
     private String password;
     private Set<Items> items = new HashSet<Items>();
-    private Set<UsersProfile> usersProfile = new HashSet<UsersProfile>();
+    private UsersProfile usersProfile;
 
     public Users() {
     }
 
-    public Users(String firstName, String lastName, int age, String email, String password) {
+    public Users(String firstName, String lastName, int age, String email, String password, UsersProfile usersProfile) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.email = email;
         this.password = password;
+        this.usersProfile = usersProfile;
     }
 
     @Id
@@ -92,15 +93,13 @@ public class Users implements Serializable{
         this.password = password;
     }
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinTable(name="users_users_profile",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "users_profile_id"))
-    public Set<UsersProfile> getUsersProfile() {
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "profile_id")
+    public UsersProfile getUsersProfile() {
         return usersProfile;
     }
 
-    public void setUsersProfile(Set<UsersProfile> usersProfile) {
+    public void setUsersProfile(UsersProfile usersProfile) {
         this.usersProfile = usersProfile;
     }
 }

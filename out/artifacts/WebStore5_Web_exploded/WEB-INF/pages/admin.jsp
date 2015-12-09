@@ -99,7 +99,7 @@ Licensed under MIT
     </style>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
+<!--
      <script type="text/javascript">
         function doAjax() {
             $.ajax({
@@ -113,14 +113,10 @@ Licensed under MIT
             });
         }
     </script>
+-->
 
 </head>
 <body>
-<!--
-Bootstrap Line Tabs by @keenthemes
-A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
-Licensed under MIT
--->
 
 <div class="container">
     <div class="row">
@@ -150,16 +146,7 @@ Licensed under MIT
     						<a href="#tab_default_5" data-toggle="tab">
 							Anniversary Timeoffs </a>
 						</li>
-    <!--
-                        <li>
-    						<a href="#tab_default_6" data-toggle="tab">
-							Manage Shutdown </a>
-						</li>
-                        <li>
-    						<a href="#tab_default_7" data-toggle="tab">
-							Override List </a>
-						</li>
-    -->
+
 					</ul>
 
 					<div class="tab-content">
@@ -187,104 +174,55 @@ Licensed under MIT
                                     Права
                                 </div>
                                 <br>        
-                                                
-                                            
-
-                                            <!--
-                                                <c:forEach items="${list}" var="user">
-                                                <tr>
-                                                    <td>${user.firstName}</td>
-                                                    <td>${user.lastName}</td>
-                                                    <td>${user.age}</td>
-                                                    <td>${user.email}</td>
-                                                </tr>
-                                                </c:forEach>
-
-
-                                           
-                                            -->
+                  
                             </ul>
 
-<div class="container">
-    <div class="panel panel-default">
-            
-            <c:forEach items="${list}" var="user">
-           
-           <tr class="list-group">
-                <div class="row toggle" id="dropdown-detail-${user.id}" data-toggle="detail-${user.id}" onclick="doAjax(${user.id})">
-                    
-                    <div class="col-xs-2">
-                        ${user.firstName}
-                    </div>
-                    <div class="col-xs-2">
-                        ${user.lastName}
-                    </div>
-                    <div class="col-xs-2">
-                        ${user.age}
-                    </div>
-                    <div class="col-xs-2">
-                        ${user.email}
-                    </div>
-                    <div class="col-xs-2">
-                        ${fn:length(user.items)}
-                    </div>
-                    <div class="col-xs-2">
-                        <select>
-                            <option value="1">ADMIN</option>
-                            <option value="2">USER</option>
-                        </select>
-                        <c:forEach items="${user.usersProfile}" var="usersProfile">
-                            ${usersProfile.type}
-                        </c:forEach>
-                    </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                    
-                    
-                    <div class="col-xs-2"><i class="fa fa-chevron-down pull-right"></i></div>
-                </div>
-                <div id="detail-${user.id}">
-                    <hr></hr>
-                    <div class="container">
-                        <div class="fluid-row">
-                            <c:forEach items="${user.items}" var="item">
-                                ${item.product}<p>
+                       
+                           
+                                <ul class="table table-striped" style="width:100%">
+                                <c:forEach items="${list}" var="user">
 
-                            </c:forEach>
-                        </div>
+                                   <div class="row toggle" id="dropdown-detail-${user.id}" data-toggle="detail-${user.id}">
+                                        <div class="col-xs-2">
+                                            ${user.firstName}
+                                        </div>
+                                        <div class="col-xs-2">
+                                            ${user.lastName}
+                                        </div>
+                                        <div class="col-xs-2">
+                                            ${user.age}
+                                        </div>
+                                        <div class="col-xs-2">
+                                            ${user.email}
+                                        </div>
+                                        <div class="col-xs-2">
+                                            ${fn:length(user.items)}
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <select>
+                                                <option value="1" ${user.usersProfile.type == 'ADMIN' ? 'selected="selected"' : ''}>ADMIN</option>
+                                                <option value="2" ${user.usersProfile.type == 'USER' ? 'selected="selected"' : ''}>USER</option>
+                                                <option value="2" ${user.usersProfile.type == 'PRO-USER' ? 'selected="selected"' : ''}>PRO-USER</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div id="detail-${user.id}">
+                                        
+                                        <div class="container">
+                                            <c:forEach items="${user.items}" var="item">
+                                                ${item.product}<p>
+                                            </c:forEach>
+                                        </div>
+
+                                    </div>
+                                            
+                                   
+                                </c:forEach>
+                                </ul>
+                           
+                        
                     </div>
-                </div>
-            
-            </tr>
-            </c:forEach>
-        
-    </div>
-</div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('[id^=detail-]').hide();
-    $('.toggle').click(function() {
-        $input = $( this );
-        $target = $('#'+$input.attr('data-toggle'));
-        $target.slideToggle();
-    });
-});
-
-
-</script>
-
-               
-                                 
-                            
-                            
-                      
-
-                        </div>
 
 
 						<div class="tab-pane" id="tab_default_2">
@@ -570,7 +508,18 @@ may follow RTO. This list will be maintained by HR RTO Admin.</p>
 	</div>
 </div>
 
+<script type="text/javascript">
+$(document).ready(function() {
+    $('[id^=detail-]').hide();
+    $('.toggle').click(function() {
+        $input = $( this );
+        $target = $('#'+$input.attr('data-toggle'));
+        $target.slideToggle();
+    });
+});
 
+
+</script>
 
 
 </body>

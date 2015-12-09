@@ -32,26 +32,19 @@
       <column name="age" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
       <column name="email" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="JzAn"/>
       <column name="password" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="profile_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_users_users_profile" columns="profile_id" ref-table="users_profile" ref-schema="" ref-catalog="web_store" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <exported-key name="FK_users" table="items_users" schema="" catalog="web_store" columns="users_id"/>
-      <exported-key name="FK_user_id" table="users_users_profile" schema="" catalog="web_store" columns="user_id"/>
       <index name="email" unique="true" columns="email"/>
+      <index name="fk_user_profile" unique="false" columns="profile_id"/>
     </table>
     <table name="users_profile" schema="" catalog="web_store" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="type" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FK_users_profile_id" table="users_users_profile" schema="" catalog="web_store" columns="users_profile_id"/>
+      <exported-key name="FK_users_users_profile" table="users" schema="" catalog="web_store" columns="profile_id"/>
       <index name="type" unique="true" columns="type"/>
-    </table>
-    <table name="users_users_profile" schema="" catalog="web_store" type="TABLE">
-      <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <column name="users_profile_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
-      <primary-key name="PRIMARY" columns="user_id,users_profile_id"/>
-      <foreign-key name="FK_users_profile_id" columns="users_profile_id" ref-table="users_profile" ref-schema="" ref-catalog="web_store" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="FK_user_id" columns="user_id" ref-table="users" ref-schema="" ref-catalog="web_store" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <index name="FK_users_id" unique="false" columns="user_id"/>
-      <index name="FK_users_profile_id" unique="false" columns="users_profile_id"/>
     </table>
   </data-source>
 </component>

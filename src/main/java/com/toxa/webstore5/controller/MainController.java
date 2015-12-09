@@ -2,6 +2,7 @@ package com.toxa.webstore5.controller;
 
 import com.toxa.webstore5.model.entity.Users;
 import com.toxa.webstore5.model.repository.Repository;
+import com.toxa.webstore5.model.repository.UserRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,12 +13,13 @@ import org.springframework.web.servlet.ModelAndView;
 public class MainController {
 
     private final Repository repository = new Repository();
+    private final UserRepository userRepository = new UserRepository();
 
     @RequestMapping(value = {"/", "/index**"})
     public ModelAndView homePage(){
         ModelAndView modelAndView = new ModelAndView("index");
         modelAndView.addObject("list", repository.getAllItems());
-        modelAndView.addObject("user", repository.getUser(1));
+//        modelAndView.addObject("user", repository.getUser(1));
         return modelAndView;
     }
 
@@ -38,9 +40,9 @@ public class MainController {
                                  @RequestParam(value = "age") String age,
                                  @RequestParam(value = "password") String password
                                  ) {
-        Users user = new Users(firstName, lastName, Integer.parseInt(age), email, password);
-        repository.addUser(user);
-        repository.setProfileAsUser(user);
-        return new ModelAndView("redirect: /");
+        Users user = new Users(firstName, lastName, Integer.parseInt(age), email, password, userRepository.getUserProfile("USER"));
+        userRepository.addUser(user);
+//        repository.setProfileAsUser(user);
+        return new ModelAndView("redirect:/");
     }
 }

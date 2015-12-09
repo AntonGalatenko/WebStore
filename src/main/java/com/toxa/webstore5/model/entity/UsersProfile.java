@@ -3,6 +3,8 @@ package com.toxa.webstore5.model.entity;
 import com.toxa.webstore5.model.UserProfileType;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table (name = "users_profile")
@@ -10,7 +12,7 @@ public class UsersProfile {
 
     private int id;
     private String type = UserProfileType.USER.getUserProfileType();
-//    private Set<Users> usersSet = new HashSet<Users>();
+    private Set<Users> usersSet = new HashSet<Users>();
 
     public UsersProfile() {
     }
@@ -34,12 +36,12 @@ public class UsersProfile {
         this.type = type;
     }
 
-//    @ManyToMany(mappedBy = "userProfiles", fetch = FetchType.EAGER)
-//    public Set<Users> getUsersSet() {
-//        return usersSet;
-//    }
-//
-//    public void setUsersSet(Set<Users> usersSet) {
-//        this.usersSet = usersSet;
-//    }
+    @OneToMany (mappedBy = "usersProfile", cascade = CascadeType.ALL)
+    public Set<Users> getUsersSet() {
+        return usersSet;
+    }
+
+    public void setUsersSet(Set<Users> usersSet) {
+        this.usersSet = usersSet;
+    }
 }
