@@ -1,29 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="257a6281-23f2-4454-aebb-c63edd99c3fa" name="Default" comment="first commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/UserRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/controller/AdminController.class" afterPath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/controller/AdminController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/model/repository/CustomUserDetailsService.class" afterPath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/model/repository/CustomUserDetailsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/controller/MainController.class" afterPath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/controller/MainController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/model/repository/Repository.class" afterPath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/model/repository/Repository.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/config/RepositoryConfig.class" afterPath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/config/RepositoryConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/config/SecurityInit.class" afterPath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/config/SecurityInit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/model/UserProfileType.class" afterPath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/model/UserProfileType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/model/entity/Users.class" afterPath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/model/entity/Users.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/model/entity/UsersProfile.class" afterPath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/model/entity/UsersProfile.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/config/WebConfig.class" afterPath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/classes/com/toxa/webstore5/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/controller/AdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/CustomUserDetailsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/CustomUserDetailsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/controller/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/controller/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/Repository.java" afterPath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/Repository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/entity/Users.java" afterPath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/entity/Users.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/entity/UsersProfile.java" afterPath="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/entity/UsersProfile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/pages/admin.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebStore5_Web_exploded/WEB-INF/pages/admin.jsp" />
+    <list default="true" id="257a6281-23f2-4454-aebb-c63edd99c3fa" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/WEB-INF/pages/admin.jsp" afterPath="$PROJECT_DIR$/webapp/WEB-INF/pages/admin.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web_store.sql" afterPath="$PROJECT_DIR$/web_store.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebStore5.iws" />
@@ -74,9 +53,15 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/toxa/webstore5/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+            <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="731">
               <caret line="42" column="127" selection-start-line="42" selection-start-column="127" selection-end-line="42" selection-end-column="127" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1054#1055#0" expanded="false" />
+                <element signature="e#1102#1103#0" expanded="false" />
+                <element signature="e#1214#1215#0" expanded="false" />
+                <element signature="e#1265#1266#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,11 +69,9 @@
       <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/toxa/webstore5/controller/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="595">
               <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,7 +79,7 @@
       <file leaf-file-name="Users.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/entity/Users.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1292">
+            <state vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1292">
               <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
               <folding />
             </state>
@@ -116,10 +99,9 @@
       <file leaf-file-name="UsersProfile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/entity/UsersProfile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+            <state vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="697">
               <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding>
-                <element signature="e#372#379#0" expanded="true" />
                 <element signature="e#807#808#0" expanded="true" />
                 <element signature="e#838#839#0" expanded="true" />
                 <element signature="e#890#891#0" expanded="true" />
@@ -134,7 +116,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="680">
               <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +126,8 @@
       <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/UserRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4988067" vertical-offset="500" max-vertical-offset="1564">
-              <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.6476684" vertical-offset="509" max-vertical-offset="1564">
+              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -152,9 +136,11 @@
       <file leaf-file-name="CustomUserDetailsService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/CustomUserDetailsService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="646">
               <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,7 +165,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1071">
               <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1843#1844#0" expanded="false" />
+                <element signature="e#1893#1894#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,7 +177,18 @@
     </leaf>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Anton Galatenko &lt;slu4ai@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -213,9 +214,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/entity/Users.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/Repository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/CustomUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/UserRepository.java" />
       </list>
     </option>
   </component>
@@ -330,207 +331,10 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webstore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webstore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webstore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webstore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebStore" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webstore5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -953,12 +757,20 @@
       <workItem from="1449564496593" duration="4861000" />
       <workItem from="1449652457437" duration="699000" />
       <workItem from="1449654521203" duration="508000" />
-      <workItem from="1449655682000" duration="11674000" />
+      <workItem from="1449655682000" duration="12695000" />
+      <workItem from="1449750938171" duration="2442000" />
     </task>
+    <task id="LOCAL-00001" summary="   changes:&#10;@ManyToOne for user_profile&#10;drop-down list for user_profile in jsp&#10;   add:&#10;new UserRepository class&#10;new data in user_profile &quot;PRO-USER&quot;&#10;   remove:&#10;&quot;user_user_profile&quot; in db">
+      <created>1449673194890</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1449673194890</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76816000" />
+    <option name="totallyTimeSpent" value="80279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="1002" extended-state="6" />
@@ -976,18 +788,18 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32777777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3588889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2584814" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21728595" sideWeight="0.5005701" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26484376" sideWeight="0.49942988" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21728595" sideWeight="0.5005701" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1012,6 +824,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="   changes:&#10;@ManyToOne for user_profile&#10;drop-down list for user_profile in jsp&#10;   add:&#10;new UserRepository class&#10;new data in user_profile &quot;PRO-USER&quot;&#10;   remove:&#10;&quot;user_user_profile&quot; in db" />
+    <option name="LAST_COMMIT_MESSAGE" value="   changes:&#10;@ManyToOne for user_profile&#10;drop-down list for user_profile in jsp&#10;   add:&#10;new UserRepository class&#10;new data in user_profile &quot;PRO-USER&quot;&#10;   remove:&#10;&quot;user_user_profile&quot; in db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1041,15 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="476">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#getRootConfigClasses#0;class#AppInit#0" expanded="false" />
-            <element signature="method#getServletConfigClasses#0;class#AppInit#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#864#865#0" expanded="false" />
-            <element signature="e#924#925#0" expanded="false" />
-            <element signature="e#981#982#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1057,7 +862,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="1071">
           <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1843#1844#0" expanded="false" />
+            <element signature="e#1893#1894#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1065,15 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="476">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#getRootConfigClasses#0;class#AppInit#0" expanded="false" />
-            <element signature="method#getServletConfigClasses#0;class#AppInit#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#864#865#0" expanded="false" />
-            <element signature="e#924#925#0" expanded="false" />
-            <element signature="e#981#982#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1081,7 +881,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="597" max-vertical-offset="1258">
           <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1843#1844#0" expanded="false" />
+            <element signature="e#1893#1894#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,7 +900,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="765">
           <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1118,7 +924,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1843#1844#0" expanded="false" />
+            <element signature="e#1893#1894#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1149,7 +959,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="459">
           <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1054#1055#0" expanded="false" />
+            <element signature="e#1102#1103#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1265#1266#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1164,7 +980,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="765">
           <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1186,7 +1004,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1843#1844#0" expanded="false" />
+            <element signature="e#1893#1894#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1217,7 +1039,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="510">
           <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1054#1055#0" expanded="false" />
+            <element signature="e#1102#1103#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1265#1266#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1232,7 +1060,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1275,7 +1105,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="283" max-vertical-offset="833">
           <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1843#1844#0" expanded="false" />
+            <element signature="e#1893#1894#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1283,7 +1117,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="493">
           <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1054#1055#0" expanded="false" />
+            <element signature="e#1102#1103#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1265#1266#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1329,15 +1169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#getRootConfigClasses#0;class#AppInit#0" expanded="false" />
-            <element signature="method#getServletConfigClasses#0;class#AppInit#0" expanded="false" />
-            <element signature="e#824#825#0" expanded="false" />
-            <element signature="e#864#865#0" expanded="false" />
-            <element signature="e#924#925#0" expanded="false" />
-            <element signature="e#981#982#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1387,7 +1218,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1071">
           <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1843#1844#0" expanded="false" />
+            <element signature="e#1893#1894#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1395,9 +1230,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
           <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1413,7 +1246,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="680">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1422,7 +1257,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
           <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
-            <element signature="e#372#379#0" expanded="true" />
             <element signature="e#807#808#0" expanded="true" />
             <element signature="e#838#839#0" expanded="true" />
             <element signature="e#890#891#0" expanded="true" />
@@ -1435,7 +1269,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
           <caret line="42" column="127" selection-start-line="42" selection-start-column="127" selection-end-line="42" selection-end-column="127" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1054#1055#0" expanded="false" />
+            <element signature="e#1102#1103#0" expanded="false" />
+            <element signature="e#1214#1215#0" expanded="false" />
+            <element signature="e#1265#1266#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1443,14 +1283,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4988067" vertical-offset="500" max-vertical-offset="1564">
-          <caret line="64" column="54" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.6476684" vertical-offset="509" max-vertical-offset="1564">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
           <folding />
         </state>
       </provider>
