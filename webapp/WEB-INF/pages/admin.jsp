@@ -128,7 +128,7 @@ Licensed under MIT
 							<a href="#tab_default_1" data-toggle="tab">Список пользователей </a>
 						</li>
 						<li>
-							<a href="#tab_default_2" data-toggle="tab">Accrued PTO Conversion </a>
+							<a href="#tab_default_2" data-toggle="tab">Список товаров </a>
 						</li>
 						<li>
 							<a href="#tab_default_3" data-toggle="tab">Override RTO </a>
@@ -204,6 +204,7 @@ Licensed under MIT
                   </div>
 
                   <div class="tab-pane active" id="tab_default_2">
+                    <h3>Hello world</h3>
                   </div>
 
                   <div class="tab-pane active" id="tab_default_3">

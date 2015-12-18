@@ -1,30 +1,47 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Store</title>
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link type="text/css" href="/resources/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="/resources/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/resources/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $.ajax({
+          type: "POST",
+          url: "/getUser",
+          data: "id=" + 11,
+          dataType: "json",
+          success: function(data){
+            $("#userInfo").text(data.lastname);
+          },
+          error: function(data, status, er){
+             $("#userInfo").text(data.lastname + " status: " + status + " er:" + er);
+          }
+        });
+      });
+    </script>
 
 </head>
 
 <body>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="http://templateplanet.info/tooltip.js"></script>
-    <script src="http://templateplanet.info/modal.js"></script>
-
     <div class="container">
     <div class="row">
         <div class="col-md-12">
-        <h4>${user.firstName} ${user.lastName} (${user.email})</h4>
+  <!--
+        <security:authentication property="principal.username" /><br>
+  -->
+        <p id="userInfo"></p>
         <div class="table-responsive">
             <table id="mytable" class="table table-bordred table-striped">
                 <thead>
                    <tr>
-                    <th><input type="checkbox" id="checkall" /></th>
                     <th>Product</th>
                     <th>Description</th>
                     <th>Count</th>
@@ -36,7 +53,6 @@
                 <tbody>
                     <c:forEach items="${list}" var="item">
                         <tr>
-                            <td><input type="checkbox" class="checkthis" /></td>
                             <td>${item.product}</td>
                             <td>${item.description}</td>
                             <td>${item.count}</td>
@@ -121,25 +137,6 @@
   </div>
       <!-- /.modal-dialog --> 
     </div>
-<script type="text/javascript">
-$(document).ready(function(){
-$("#mytable #checkall").click(function () {
-        if ($("#mytable #checkall").is(':checked')) {
-            $("#mytable input[type=checkbox]").each(function () {
-                $(this).prop("checked", true);
-            });
 
-        } else {
-            $("#mytable input[type=checkbox]").each(function () {
-                $(this).prop("checked", false);
-            });
-        }
-    });
-});
-
- $(function () {
-            $("[rel='tooltip']").tooltip();
-        });
-</script>
 </body>
 </html>

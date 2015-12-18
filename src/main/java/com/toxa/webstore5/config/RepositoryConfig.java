@@ -1,6 +1,8 @@
 package com.toxa.webstore5.config;
 
 
+import com.toxa.webstore5.model.repository.Repository;
+import com.toxa.webstore5.model.repository.UserRepository;
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -48,6 +50,16 @@ public class RepositoryConfig {
 
         return sessionFactory;
 
+    }
+
+    @Bean
+    public Repository repository(){
+        return new Repository();
+    }
+
+    @Bean
+    public UserRepository userRepository(){
+        return new UserRepository();
     }
 
 }
