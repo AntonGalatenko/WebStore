@@ -69,17 +69,17 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/resources/**").addResourceLocations("/WEB-INF/pages/resources/");
     }
 
-    @Override
-    public void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
-        configurer.favorPathExtension(false).
-                favorParameter(true).
-                parameterName("mediaType").
-                ignoreAcceptHeader(true).
-                useJaf(false).
-                defaultContentType(MediaType.APPLICATION_JSON).
-                mediaType("xml", MediaType.APPLICATION_XML).
-                mediaType("json", MediaType.APPLICATION_JSON);
-    }
-
+@Override
+	public void configureContentNegotiation(
+			ContentNegotiationConfigurer configurer) {
+		// Simple strategy: only path extension is taken into account
+		configurer.favorPathExtension(true).
+			ignoreAcceptHeader(true).
+			useJaf(false).
+			defaultContentType(MediaType.TEXT_HTML).
+			mediaType("html", MediaType.TEXT_HTML).
+			mediaType("xml", MediaType.APPLICATION_XML).
+			mediaType("json", MediaType.APPLICATION_JSON);
+	}
 
 }

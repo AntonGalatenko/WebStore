@@ -1,5 +1,6 @@
 package com.toxa.webstore5.controller;
 
+import com.toxa.webstore5.model.TestClass;
 import com.toxa.webstore5.model.entity.Users;
 import com.toxa.webstore5.model.repository.Repository;
 import com.toxa.webstore5.model.repository.UserRepository;
@@ -56,5 +57,17 @@ public class MainController {
         Users user = userRepository.getUser(id);
         System.out.println("USER " + user.getEmail());
         return user;
+    }
+
+    @RequestMapping(value = "/test", method = RequestMethod.POST)
+//    @ResponseStatus(HttpStatus.OK)
+    public @ResponseBody TestClass t(@RequestParam int id){
+
+        System.out.println("!!!!!");
+
+        TestClass testClass = new TestClass();
+        testClass.setName("Антон");
+        testClass.setStaffName(new String[]{"Галат", "Старший"});
+        return testClass;
     }
 }

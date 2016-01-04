@@ -2,8 +2,6 @@ package com.toxa.webstore5.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import javax.servlet.Filter;
-
 
 public class AppInit extends AbstractAnnotationConfigDispatcherServletInitializer {
 
@@ -30,8 +28,8 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
         return new String[]{"/"};
     }
 
-    @Override
-    protected Filter[] getServletFilters() {
-        return new Filter[]{new EncodingFilter()};
-    }
+//    @Override
+//    protected Filter[] getServletFilters() {
+//        return new Filter[]{new EncodingFilter()};
+//    }
 }

@@ -15,14 +15,14 @@
       $(document).ready(function(){
         $.ajax({
           type: "POST",
-          url: "/getUser",
+          url: "/test",
           data: "id=" + 11,
-          dataType: "json",
+          dataType: "html",
           success: function(data){
-            $("#userInfo").text(data.lastname);
+            $("#userInfo").text(data);
           },
           error: function(data, status, er){
-             $("#userInfo").text(data.lastname + " status: " + status + " er:" + er);
+             $("#userInfo").text(data + " status: " + status + " er:" + er);
           }
         });
       });
