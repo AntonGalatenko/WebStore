@@ -16,8 +16,8 @@
         $.ajax({
           type: "POST",
           url: "/test",
-          data: "id=" + 11,
-          dataType: "html",
+          data: "id=" + 12,
+          
           success: function(data){
             $("#userInfo").text(data);
           },

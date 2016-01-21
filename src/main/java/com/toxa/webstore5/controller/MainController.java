@@ -1,6 +1,5 @@
 package com.toxa.webstore5.controller;
 
-import com.toxa.webstore5.model.TestClass;
 import com.toxa.webstore5.model.entity.Users;
 import com.toxa.webstore5.model.repository.Repository;
 import com.toxa.webstore5.model.repository.UserRepository;
@@ -11,6 +10,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
 
 @Controller
 public class MainController {
@@ -25,7 +27,7 @@ public class MainController {
     public ModelAndView homePage(){
         ModelAndView modelAndView = new ModelAndView("index");
         modelAndView.addObject("list", repository.getAllItems());
-//        modelAndView.addObject("user", repository.getUser(1));
+
         return modelAndView;
     }
 
@@ -61,13 +63,21 @@ public class MainController {
 
     @RequestMapping(value = "/test", method = RequestMethod.POST)
 //    @ResponseStatus(HttpStatus.OK)
-    public @ResponseBody TestClass t(@RequestParam int id){
-
+    public @ResponseBody String users(HttpServletRequest request, @RequestParam int id){
         System.out.println("!!!!!");
 
-        TestClass testClass = new TestClass();
-        testClass.setName("Антон");
-        testClass.setStaffName(new String[]{"Галат", "Старший"});
-        return testClass;
+        Cookie cookie[] = request.getCookies();
+        for(int i = 0; i < cookie.length; i++){
+            System.out.println(cookie[i].getValue());
+        }
+
+
+//        TestClass testClass = new TestClass();
+//        testClass.setName("Антон");
+//        testClass.setStaffName(new String[]{"Галат", "Старший"});
+        Users users = userRepository.getUser(id);
+        System.out.println("US " + users);
+        System.out.println("US1 " + users.getFirstName());
+        return users.toString();
     }
 }

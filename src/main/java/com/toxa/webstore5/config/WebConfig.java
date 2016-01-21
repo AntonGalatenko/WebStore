@@ -1,12 +1,14 @@
 package com.toxa.webstore5.config;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.StringHttpMessageConverter;
-import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -69,17 +71,29 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/resources/**").addResourceLocations("/WEB-INF/pages/resources/");
     }
 
-@Override
-	public void configureContentNegotiation(
-			ContentNegotiationConfigurer configurer) {
-		// Simple strategy: only path extension is taken into account
-		configurer.favorPathExtension(true).
-			ignoreAcceptHeader(true).
-			useJaf(false).
-			defaultContentType(MediaType.TEXT_HTML).
-			mediaType("html", MediaType.TEXT_HTML).
-			mediaType("xml", MediaType.APPLICATION_XML).
-			mediaType("json", MediaType.APPLICATION_JSON);
-	}
+//@Override
+//	public void configureContentNegotiation(
+//			ContentNegotiationConfigurer configurer) {
+//		// Simple strategy: only path extension is taken into account
+//		configurer.favorPathExtension(true).
+//			ignoreAcceptHeader(true).
+//			useJaf(false).
+//			defaultContentType(MediaType.TEXT_HTML).
+//			mediaType("html", MediaType.TEXT_HTML).
+//			mediaType("xml", MediaType.APPLICATION_XML).
+//			mediaType("json", MediaType.APPLICATION_JSON);
+//	}
+
+    @Override
+    public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
+        converters.add(mappingJackson2HttpMessageConverter());
+    }
+
+    @Bean
+    public MappingJackson2HttpMessageConverter mappingJackson2HttpMessageConverter() {
+        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
+        converter.setObjectMapper(new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false));
+        return converter;
+    }
 
 }

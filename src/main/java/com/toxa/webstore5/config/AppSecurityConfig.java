@@ -1,4 +1,4 @@
-/*
+
 package com.toxa.webstore5.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,12 +55,10 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/admin**").access("hasRole('ROLE_ADMIN')")
                 .antMatchers("/login**").permitAll()
-                .antMatchers("/register*/
-/**").permitAll()
-                .antMatchers("*/
-/**").access("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
-                .and().formLogin()*/
-/*.defaultSuccessUrl("/", false);*//*
+                .antMatchers("/register*/").permitAll()
+                .antMatchers("/*").access("hasRole('ROLE_USER') or hasRole('ROLE_ADMIN')")
+                .and().formLogin()
+                .defaultSuccessUrl("/login", false)
 
                 .loginPage("/login")
                 .loginProcessingUrl("/j_spring_security_check")
@@ -72,5 +70,3 @@ public class AppSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 }
 
-
-*/

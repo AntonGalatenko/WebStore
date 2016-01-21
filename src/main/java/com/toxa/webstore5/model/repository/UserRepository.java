@@ -92,5 +92,13 @@ public class UserRepository {
         return true;
     }*/
 
+    public void setCookie (Users user, String cookie){
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        user.setCookie(cookie);
+        session.update(user);
+        session.getTransaction().commit();
+        session.close();
+    }
 
 }

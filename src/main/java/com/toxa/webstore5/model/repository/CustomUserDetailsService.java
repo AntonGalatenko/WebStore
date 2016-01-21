@@ -18,8 +18,8 @@ public class CustomUserDetailsService implements UserDetailsService {
        Users user = new UserRepository().getUser(email);
 
         if(user==null){
-            System.out.println("User not found");
-            throw new UsernameNotFoundException("Username not found");
+            System.out.println("User not found " + email);
+            throw new UsernameNotFoundException("Username not found " + email);
         }
 
         System.out.println("User email : " + user.getEmail());
@@ -35,6 +35,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 //            System.out.println("UserProfile : " + userProfile);
             authorities.add(new SimpleGrantedAuthority("ROLE_" + user.getUsersProfile().getType()));
 //        }
+
         System.out.println("authorities : " + authorities);
         return authorities;
     }
