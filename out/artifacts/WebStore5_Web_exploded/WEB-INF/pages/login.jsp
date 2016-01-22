@@ -32,10 +32,10 @@
 				<h2>Please Sign In</h2>
 				<hr class="colorgraph">
 				<div class="form-group">
-                    <input type="email" name="j_username" id="email" class="form-control input-lg" placeholder="Email Address" value="admin@com">
+                    <input type="email" name="j_username" id="email" class="form-control input-lg" placeholder="Email Address" value="neo@neo.com">
 				</div>
 				<div class="form-group">
-                    <input type="password" name="j_password" id="password" class="form-control input-lg" placeholder="Password" value="admin">
+                    <input type="password" name="j_password" id="password" class="form-control input-lg" placeholder="Password" value="123">
 				</div>
 				<span class="button-checkbox">
 					<button type="button" class="btn" data-color="info">Remember Me</button>
