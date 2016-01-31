@@ -16,7 +16,6 @@ public class Users implements Serializable{
     private String password;
     private Set<Items> items = new HashSet<Items>();
     private UsersProfile usersProfile;
-    private String cookie;
 
     public Users() {
     }
@@ -104,16 +103,8 @@ public class Users implements Serializable{
         this.usersProfile = usersProfile;
     }
 
-    public String getCookie() {
-        return cookie;
-    }
-
-    public void setCookie(String cookie) {
-        this.cookie = cookie;
-    }
-
     @Override
     public String toString(){
-        return ("First Name: " + firstName + ", last name: " + lastName + ", email: " + email);
+        return ("User: " + firstName + " " + lastName + ", " + email);
     }
 }

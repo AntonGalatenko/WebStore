@@ -14,7 +14,7 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $.ajax({
-          url: "/getUserInfo",
+          url: "/user/getUserInfo",
           success: function(data){
             $("#userInfo").text(data);
           },
@@ -25,6 +25,18 @@
       });
     </script>
 
+    <script>  
+        function addItem(id){
+          $.ajax({  
+            url: "/user/" + id,  
+              success: function(html){  
+                $("#content").html(html);  
+              }  
+          });  
+        }  
+ 
+    </script>  
+
 </head>
 
 <body>
@@ -34,7 +46,8 @@
   <!--
         <security:authentication property="principal.username" /><br>
   -->
-        <p id="userInfo"></p>
+        <div id="userInfo"></div><a href="">profile</a>
+
         <div class="table-responsive">
             <table id="mytable" class="table table-bordred table-striped">
                 <thead>
@@ -57,7 +70,7 @@
                         <!--    
                             <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                         -->
-                            <td><p><button class="btn btn-primary btn-xs" data-title="Add" data-toggle="modal" data-target="#addd" data-placement="top" rel="tooltip" onclick="/user/${item.id}"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                            <td><p><button class="btn btn-primary btn-xs" data-title="Add" data-toggle="modal" data-target="#addd" data-placement="top" rel="tooltip" onclick="addItem(${item.id})"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                             <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
                         </tr>
                     </c:forEach>

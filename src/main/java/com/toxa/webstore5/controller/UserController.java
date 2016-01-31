@@ -1,12 +1,15 @@
 package com.toxa.webstore5.controller;
 
 
+import com.toxa.webstore5.model.entity.Items;
 import com.toxa.webstore5.model.entity.Users;
+import com.toxa.webstore5.model.repository.Repository;
 import com.toxa.webstore5.model.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -16,6 +19,9 @@ public class UserController {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private Repository repository;
 
     @RequestMapping(value = "/getUserInfo")
     public @ResponseBody
@@ -32,5 +38,13 @@ public class UserController {
         Users users = userRepository.getUser(email);
 
         return users.toString();
+    }
+
+    @RequestMapping(value = "/{id}")
+    public void addItem(@PathVariable int id){
+        System.out.println("!@!@!@!@!@!@!@!@");
+        Users user = userRepository.getUser(SecurityContextHolder.getContext().getAuthentication().getName());
+        Items item = repository.getItem(id);
+        userRepository.addItemToUser(item, user);
     }
 }
