@@ -11,6 +11,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -41,10 +42,22 @@ public class UserController {
     }
 
     @RequestMapping(value = "/{id}")
-    public void addItem(@PathVariable int id){
-        System.out.println("!@!@!@!@!@!@!@!@");
+    public @ResponseBody
+    String addItem(@PathVariable int id){
         Users user = userRepository.getUser(SecurityContextHolder.getContext().getAuthentication().getName());
         Items item = repository.getItem(id);
+
         userRepository.addItemToUser(item, user);
+        return "OK!";
+    }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    public @ResponseBody
+    String deleteItem(@PathVariable int id){
+        Users user = userRepository.getUser(SecurityContextHolder.getContext().getAuthentication().getName());
+        Items item = repository.getItem(id);
+
+        userRepository.deleteItemOfUser(item, user);
+        return "OK!";
     }
 }

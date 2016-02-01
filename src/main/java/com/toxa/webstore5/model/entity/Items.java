@@ -70,10 +70,7 @@ public class Items {
         this.price = price;
     }
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinTable(name = "items_users",
-                joinColumns = @JoinColumn(name = "items_id"),
-                inverseJoinColumns = @JoinColumn(name = "users_id"))
+    @ManyToMany(mappedBy = "items", fetch = FetchType.EAGER)
     public Set<Users> getUsers() {
         return users;
     }

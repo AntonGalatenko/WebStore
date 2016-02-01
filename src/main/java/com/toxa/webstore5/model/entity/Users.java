@@ -75,7 +75,10 @@ public class Users implements Serializable{
         this.email = email;
     }
 
-    @ManyToMany(mappedBy = "users", fetch = FetchType.EAGER)
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(name = "items_users",
+            joinColumns = @JoinColumn(name = "users_id"),
+            inverseJoinColumns = @JoinColumn(name = "items_id"))
     public Set<Items> getItems() {
         return items;
     }
@@ -93,7 +96,7 @@ public class Users implements Serializable{
         this.password = password;
     }
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.EAGER)
     @JoinColumn(name = "profile_id")
     public UsersProfile getUsersProfile() {
         return usersProfile;

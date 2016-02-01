@@ -11,7 +11,9 @@ import org.hibernate.criterion.CriteriaSpecification;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 public class UserRepository {
 
@@ -66,10 +68,35 @@ public class UserRepository {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        item.getUsers().add(user);
+//        item.getUsers().add(user);
 
-        session.update(item);
+        user.getItems().add(item);
+        session.merge(user);
         session.getTransaction().commit();
+
+        session.close();
+    }
+
+    public void deleteItemOfUser(Items item, Users user){
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+
+        Set<Items>itemsSet = user.getItems();
+        Iterator<Items> it = itemsSet.iterator();
+
+        while (it.hasNext()){
+            Items items = it.next();
+            if(items.getId() == (item.getId())){
+                it.remove();
+                break;
+            }
+
+        }
+
+        user.setItems(itemsSet);
+        session.merge(user);
+        session.getTransaction().commit();
+
         session.close();
     }
 

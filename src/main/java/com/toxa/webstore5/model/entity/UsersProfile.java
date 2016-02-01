@@ -36,7 +36,7 @@ public class UsersProfile {
         this.type = type;
     }
 
-    @OneToMany (mappedBy = "usersProfile", cascade = CascadeType.ALL)
+    @OneToMany (mappedBy = "usersProfile")
     public Set<Users> getUsersSet() {
         return usersSet;
     }
