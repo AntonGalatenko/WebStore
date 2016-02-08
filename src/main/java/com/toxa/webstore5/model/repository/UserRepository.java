@@ -102,7 +102,8 @@ public class UserRepository {
 
     public UsersProfile getUserProfile(String type){
         Session session = sessionFactory.openSession();
-        UsersProfile usersProfile = (UsersProfile) session.createCriteria(UsersProfile.class).add(Restrictions.eq("type", type)).uniqueResult();
+        UsersProfile usersProfile = (UsersProfile) session.createCriteria(UsersProfile.class).add(Restrictions.eq("type", type))
+                .uniqueResult();
         session.close();
         return usersProfile;
     }
@@ -118,6 +119,15 @@ public class UserRepository {
         session.close();
         return true;
     }*/
+
+    public List<Items> getAllItemsFromUser(Users user){
+        Session session = sessionFactory.openSession();
+        List<Items>  result = session.createCriteria(Users.class)
+                .setResultTransformer(CriteriaSpecification.DISTINCT_ROOT_ENTITY)
+                .list();
+        session.close();
+        return result;
+    }
 
 
 }

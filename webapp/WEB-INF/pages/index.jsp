@@ -11,6 +11,12 @@
     <script type="text/javascript" src="/resources/js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="/resources/js/bootstrap.min.js"></script>
 
+    <style type="text/css">
+
+      #profileButton{float:right;}
+
+    </style>
+
     <script type="text/javascript">
       $(document).ready(function(){
         $.ajax({
@@ -29,8 +35,21 @@
         function addItem(id){
           $.ajax({  
             url: "/user/" + id,  
-              success: function(html){  
-                $("#content").html(html);  
+              success: function(data){  
+                $("#res1").text(data);  
+              }  
+          });  
+        }  
+ 
+    </script>  
+
+    <script>  
+        function deleteItem(id){
+          $.ajax({
+            type: "DELETE",
+            url: "/user/" + id,  
+              success: function(data){  
+                $("#res1").text(data);  
               }  
           });  
         }  
@@ -46,7 +65,9 @@
   <!--
         <security:authentication property="principal.username" /><br>
   -->
-        <div id="userInfo"></div><a href="">profile</a>
+        <div id="profileButton"><a href="user/profile"><img src="/resources/icon/profile-1.jpg" width="100" height="50" alt="profile"></a></div>
+        <div id="userInfo"></div>
+        <dic id="res1"></div>
 
         <div class="table-responsive">
             <table id="mytable" class="table table-bordred table-striped">
@@ -70,8 +91,8 @@
                         <!--    
                             <td><p><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
                         -->
-                            <td><p><button class="btn btn-primary btn-xs" data-title="Add" data-toggle="modal" data-target="#addd" data-placement="top" rel="tooltip" onclick="addItem(${item.id})"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-                            <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button></p></td>
+                            <td><p><button class="btn btn-primary btn-xs" data-title="Add" data-toggle="modal" data-target="#add" data-placement="top" rel="tooltip" onclick="addItem(${item.id})"><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+                            <td><p><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete1" data-placement="top" rel="tooltip" onclick="deleteItem(${item.id})"><span class="glyphicon glyphicon-trash"></span></button></p></td>
                         </tr>
                     </c:forEach>
                 </tbody>

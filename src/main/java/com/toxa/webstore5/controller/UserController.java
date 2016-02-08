@@ -1,6 +1,5 @@
 package com.toxa.webstore5.controller;
 
-
 import com.toxa.webstore5.model.entity.Items;
 import com.toxa.webstore5.model.entity.Users;
 import com.toxa.webstore5.model.repository.Repository;
@@ -13,6 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping(value = "/user")
@@ -25,12 +25,7 @@ public class UserController {
     private Repository repository;
 
     @RequestMapping(value = "/getUserInfo")
-    public @ResponseBody
-    String users(/*HttpServletRequest request, @RequestParam int id*/){
-//        Cookie cookie[] = request.getCookies();
-//        for(int i = 0; i < cookie.length; i++){
-//            System.out.println(cookie[i].getValue());
-//        }
+    public @ResponseBody String users(){
 
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String email = auth.getName();
@@ -60,4 +55,12 @@ public class UserController {
         userRepository.deleteItemOfUser(item, user);
         return "OK!";
     }
+
+    @RequestMapping(value = "/profile")
+    public ModelAndView profilePage(){
+        Users user = userRepository.getUser(SecurityContextHolder.getContext().getAuthentication().getName());
+//        Set<Items> items = user.getItems();
+        return new ModelAndView("profile", "list", user.getItems());
+    }
+
 }
