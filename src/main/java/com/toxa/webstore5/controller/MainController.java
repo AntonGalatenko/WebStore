@@ -21,9 +21,6 @@ public class MainController {
 
     @RequestMapping(value = {"/", "/index**"})
     public ModelAndView homePage(){
-//        ModelAndView modelAndView = new ModelAndView("index");
-//        modelAndView.addObject("list", repository.getAllItems());
-
         return new ModelAndView("index", "list", repository.getAllItems());
     }
 

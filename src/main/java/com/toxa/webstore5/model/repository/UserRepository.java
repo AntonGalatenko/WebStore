@@ -67,9 +67,6 @@ public class UserRepository {
     public void addItemToUser(Items item, Users user){
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-
-//        item.getUsers().add(user);
-
         user.getItems().add(item);
         session.merge(user);
         session.getTransaction().commit();
@@ -90,13 +87,11 @@ public class UserRepository {
                 it.remove();
                 break;
             }
-
         }
 
         user.setItems(itemsSet);
         session.merge(user);
         session.getTransaction().commit();
-
         session.close();
     }
 

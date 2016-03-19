@@ -15,7 +15,7 @@ import java.util.List;
 public class CustomUserDetailsService implements UserDetailsService {
 
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-       Users user = new UserRepository().getUser(email);
+        Users user = new UserRepository().getUser(email);
 
         if(user==null){
             System.out.println("User not found " + email);

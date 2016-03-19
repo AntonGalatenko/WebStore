@@ -4,8 +4,10 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+@Entity(name = Items.TABLE_NAME)
 public class Items {
+
+    public static final String TABLE_NAME = "items";
 
     private int id;
     private String product;

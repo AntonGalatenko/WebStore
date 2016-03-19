@@ -25,5 +25,8 @@
         <module name="WebStore5" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="WebStore5" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -5,8 +5,10 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+@Entity(name = Users.TABLE_NAME)
 public class Users implements Serializable{
+
+    public static final String TABLE_NAME = "users";
 
     private int id;
     private String firstName;

@@ -6,9 +6,10 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@Table (name = "users_profile")
+@Entity(name = UsersProfile.TABLE_NAME)
 public class UsersProfile {
+
+    public static final String TABLE_NAME = "users_profile";
 
     private int id;
     private String type = UserProfileType.USER.getUserProfileType();

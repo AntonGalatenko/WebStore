@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/src/main/java/com/toxa/webstore5/config/RepositoryConfig.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/entity/Items.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/toxa/webstore5/model/entity/Users.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
